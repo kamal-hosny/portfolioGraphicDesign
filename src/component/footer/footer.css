@@ -1,0 +1,61 @@
+/* Start footer */
+body.open .footer{
+    filter: blur(5px);
+}
+.footer{
+    position: relative;
+    padding: 15px 0;
+    border-top: #fff 1px solid;
+}
+.footer .container{
+    text-align: center;
+}
+/* ? Start links */
+.footer .container ul.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px;
+}
+.footer .container ul.links li{
+    padding: 3px 7px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.footer .container ul.links li:hover{
+    color: var(--main-color);
+}
+@media (max-width: 576px) {
+    .footer .container ul.links{
+        gap: 0;
+        margin: 0;
+    }
+    .footer .container ul.links li{
+        font-size: 14px;
+    }
+  }
+/* ? End links */
+/* ? Start social */
+.footer .container .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px;
+}
+.footer .container .social a{
+    cursor: pointer;
+    padding: 3px 7px;
+}
+.footer .container .social a .icon{
+    color: var(--main-color);
+    transition: var(--main-transition);
+}
+.footer .container .social a .icon:hover{
+    color: var(--color-text-1);
+}
+/* ? End social */
+.footer .p{
+}
+/* End footer */

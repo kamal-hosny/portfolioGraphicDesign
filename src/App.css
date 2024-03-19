@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito"
+}
+
+/* ! Start Variables **/
+:root {
+  --main-color-white: #fff;
+  --main-color: #6b3df5 ;
+  --section-color: #f4f7fa;
+  --color-text-1: #2f2f2f;
+  --color-text-2: #7f858f;
+  --main-transition:0.3s;
+  --main-padding-top: 35px;
+  --main-padding-bottom: 35px;
+}
+/* ! End Variables **/
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+
+}
+body.dark{
+  --main-color-white: #0f0d17;
+  --color-text-1: #ffffff;
+  --color-text-2: #79808a;
+
+  background-color: var(--main-color-white);
+  color: var(--color-text-1);
+}
+body.open{
+  overflow: hidden;
+}
+body.purple{
+  --main-color: #6b3df5 ;
+}
+body.yellow{
+  --main-color: #dec11a ;
+}
+body.blue{
+  --main-color: #0dbab0 ;
+}
+body.purple.dark{
+  --main-color-white: rgb(15, 13, 23) ;
+  --main-color: #6b3df5 ;
+  background-color: var(--main-color-white);
+}
+body.yellow.dark{
+  --main-color-white: #17160d ; 
+  --main-color: #dec11a ;
+  background-color: var(--main-color-white);
+}
+body.blue.dark{
+  --main-color-white: #0d1715 ;
+  --main-color: #0dbab0 ;
+  background-color: var(--main-color-white);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding-top: 60px ;
+  padding-bottom: 60px ;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #0f0d17 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 3px dashed #ffffff;
+  }
+  
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.none{
+  display: none;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+.mainTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 30px;
+}
+.mainTitle h3{
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.mainTitle .shapes{
+  background-color: var(--main-color);
+  height: 5px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .mainTitle{
+    gap: 15;
+  }
+  .mainTitle h3{
+    font-size: 16px;
+  }
+  .mainTitle .shapes {
+      width: 120px;
+  }
+}
+@media (max-width: 576px) {
+  .mainTitle{
+    gap: 10;
+  }
+  .mainTitle h3{
+    font-size: 20px;
+  }
+  .mainTitle .shapes {
+      width: 70px;
+  }
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after ,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: var(--main-color);
+}
+.whatsApp{
+  position: fixed;
+  right: 5%;
+  bottom: 2.5%;
+  background-color: var(--main-color);
+  border-radius: 100px;
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.whatsApp a{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  padding: 5px 10px ;
+  
+}
+.whatsApp p{
+  font-size: 15px;
+}
+.whatsApp .icon{
+
+}

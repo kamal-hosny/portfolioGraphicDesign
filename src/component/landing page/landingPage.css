@@ -1,0 +1,327 @@
+/* Start landingPage */
+body.open .landingPage{
+    filter: blur(5px);
+}
+.landingPage{
+position: relative;
+}
+/* ? Start  landingPage asset*/
+.landingPage img.asset{
+    position: absolute;
+    width: 50px;
+    top: 1px;
+    right: 1px;
+}
+
+@media (max-width: 991px) {
+    .landingPage img.asset{
+        display: none;
+    }
+}
+.landingPage img.asset-2-1{
+    top: 110px;
+    width: 100px;
+    left: 480px;
+    rotate: -80deg;
+    z-index: -1;
+}
+.landingPage img.asset-2-2{
+    top: 30px;
+    width: 80px;
+    right: 4%;
+    rotate: 20deg;
+}
+.landingPage img.asset-2-3{
+    top: -70px;
+    width: 80px;
+    left: 620px;
+    z-index: -1;
+}
+.landingPage img.asset-2-4{
+    top: 72%;
+    width: 50px;
+    left: 550px;
+    z-index: -1;
+}
+.landingPage img.asset-2-5{
+    top: -40px;
+    width: 50px;
+    right: 380px;
+    z-index: -1;
+}
+.landingPage img.asset-2-6{
+    top: 69%;
+    width: 55px;
+    left: 560px;
+
+}
+.landingPage img.asset-2-7{
+    top: -70px;
+    width: 60px;
+    right: 5%;
+    z-index: -1;
+}
+.landingPage img.asset-2-8{
+    top: 130px;
+    width: 20px;
+    left: 500px;
+    rotate: -80deg;
+    z-index: -2;
+}
+.landingPage img.asset-2-9{
+    top: 75%;
+    width: 25px;
+    right: 5%;
+    z-index: -1;
+}
+/* ? End  landingPage asset*/
+.landingPage .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landingPage .container .rectangle{
+    width: 100%;
+    height: 220px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* ? Start asset */
+
+.landingPage .container .rectangle img.asset-1{
+    top: -100px;
+    right: 1px;
+    rotate: 20deg;
+}
+.landingPage .container .rectangle img.asset-2{
+    top: -40px;
+    width: 15px;
+    right: 150px;
+    rotate: 25deg;
+}
+.landingPage .container .rectangle img.asset-3{
+    width: 30px;
+    left: 50px;
+    rotate: 30deg;
+    top: 70%;
+}
+.landingPage .container .rectangle img.asset-4{
+    width: 40px;
+    right: 0px;
+    rotate: 100deg;
+    top: 70px;
+}
+.landingPage .container .rectangle img.asset-5{
+    width: 40px;
+    right: 130px;
+    rotate: 30deg;
+    top: 170px;
+}
+.landingPage .container .rectangle img.asset-6{
+    width: 100px;
+    right: 200px;
+    rotate: 30deg;
+    top: 90px;
+}
+.landingPage .container .rectangle img.asset-7{
+    width: 30px;
+    left: 100px;
+    rotate: 30deg;
+    top: 90px;
+}
+.landingPage .container .rectangle img.asset-8{
+    width: 20px;
+    left: 100px;
+    rotate: 30deg;
+    top: 90%;
+}
+.landingPage .container .rectangle img.asset-9{
+    width: 50px;
+    right: 100px;
+    rotate: 30deg;
+    top: 65%;
+}
+.landingPage .container .rectangle img.asset-10{
+    width: 50px;
+    left: 40%;
+    rotate: 30deg;
+    top: 55%;
+}
+.landingPage .container .rectangle img.asset-11{
+    width: 50px;
+    left: 50%;
+    rotate: 30deg;
+    top: 40%;
+}
+.landingPage .container .rectangle img.asset-12{
+    width: 50px;
+    left: 5%;
+    rotate: 30deg;
+    top: -15%;
+}
+.landingPage .container .rectangle img.asset-13{
+    width: 50px;
+    left: 5%;
+    rotate: 30deg;
+    top: 40%;
+}
+.landingPage .container .rectangle img.asset-14{
+    width: 50px;
+    right: 5%;
+    rotate: 30deg;
+    top: 85%;
+}
+.landingPage .container .rectangle img.asset-15{
+
+    width: 20px;
+    right: 15%;
+    rotate: 30deg;
+    top: 5%;
+}
+/* ? End asset */
+@media (max-width: 991px) {
+    .landingPage{
+        padding-bottom: var(--main-padding-bottom);
+    }
+}
+@media (min-width: 991px) {
+    .landingPage .container{
+        flex-direction: row;
+        height: calc(100vh - 94.9px);
+        align-items: center;
+        justify-content: space-around;
+        gap: 100px;
+    }
+    .landingPage .container .rectangle{
+        width: 30vw;
+        height: 100%;
+    }
+}
+/* ? Start image-info */
+.landingPage .container .image-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 991px) {
+    .landingPage .container .image-info{
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+/* ? End image-info */
+/* ? Start image */ 
+.landingPage .container .image-container{
+    width: 250px;
+    height: 250px;
+    background-color: var(--main-color-white);
+    border: 8px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 10px;
+
+} 
+
+.landingPage .container .image-container .image{
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #fff;
+} 
+.landingPage .container .image-container .image img{
+    width: 100%;
+} 
+@media (min-width: 991px) {
+    .landingPage .container .image-container{
+        margin-bottom: 120px;
+        width: 300px;
+        height: 300px;
+    }
+    .landingPage .container .image-container .image{
+        width: 250px;
+        height: 250px;
+    }
+}
+/* ? End image */
+
+/* ? Start info */
+.landingPage .container .info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+.landingPage .container .info-container .info{
+    color: var(--color-text-1);
+}
+.landingPage .container .info-container .info .name{
+
+}
+.landingPage .container .info-container .info .name span{
+
+}
+.landingPage .container .info-container .info .skills{
+    font-size: 30px;
+    padding: 0;
+    color: var(--main-color);
+}
+@media (min-width: 991px) {
+    .landingPage .container .info-container{
+        text-align: start;
+    }
+    .landingPage .container .info-container .info .name span{
+        font-size: 10px;
+    }
+    .landingPage .container .info-container .info .name{
+        font-size: 20px;
+    }
+    .landingPage .container .info-container .info .skills{
+        font-size: 30px;
+    }
+}
+/* ? End info */
+/* ? Start social */
+.landingPage .container .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.landingPage .container .social a{
+    color: var(--main-color);
+    transition: var(--main-transition);
+}
+.landingPage .container .social a:hover{
+    color: var(--color-text-1);
+}
+.landingPage .container .social a .icon{
+    font-size: 30px;
+}
+@media (min-width: 991px) {
+    .landingPage .container .social{
+        flex-direction: column;
+        gap: 6px;
+    }
+    .landingPage .container .social a .icon{
+        font-size: 18px;
+    }
+}
+/* ? End social */
+
+
+/* End landingPage */
