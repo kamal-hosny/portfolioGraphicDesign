@@ -4,7 +4,7 @@ import React from 'react'
 export default function WhatsApp() {
   return (
     <div className='whatsApp'>
-        <a href="https://wa.link/84qspt">
+        <a href="#">
         <p>Contact us</p>
         <WhatsAppIcon className='icon'/>
         </a>
